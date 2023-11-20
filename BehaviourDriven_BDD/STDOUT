@@ -1,0 +1,11 @@
+
+@nopcommerceWebsite
+Scenario: Successful Login with Valid Credentials                         [90m# src/test/java/Features/NopLogin.feature:3[0m
+  [32mGiven [0m[32mUser Launch Chrome browser[0m                                        [90m# StepDefinitions.Steps.user_launch_chrome_browser()[0m
+  [32mWhen [0m[32mUser opens URl [0m[32m[1m"https://admin-demo.nopcommerce.com/login"[0m          [90m# StepDefinitions.Steps.user_opens_u_rl(java.lang.String)[0m
+  [32mWhen [0m[32mUser enters Email as [0m[32m[1m"admin@yourstore.com"[0m[32m and Password as [0m[32m[1m"admin"[0m [90m# StepDefinitions.Steps.user_enters_email_as_and_password_as(java.lang.String,java.lang.String)[0m
+  [32mWhen [0m[32mClick on Login[0m                                                     [90m# StepDefinitions.Steps.click_on_login()[0m
+  [32mThen [0m[32mPage  should be Dashboard  nopCommerce administration[0m              [90m# StepDefinitions.Steps.page_title_should_be_()[0m
+  [32mWhen [0m[32mUser Click on Log out link[0m                                         [90m# StepDefinitions.Steps.user_click_on_log_out_link()[0m
+  [32mThen [0m[32mTitle should be Your store. Login[0m                                  [90m# StepDefinitions.Steps.name_should_be()[0m
+  [32mThen [0m[32mclose browser[0m                                                      [90m# StepDefinitions.Steps.close_browser()[0m
